@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Careers</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords"
+        content="Web Development,Hot Beans,Careers,Design,Developer,Project Manager,HTML,CSS,JavaScript,JS">
+    <meta name="description"
+        content="Want a job in web development, design or project managment? We have open vaccines for you to apply for.">
+
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+            color: #CE3628;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            font-family: "Fira Mono", monospace;
+        }
+
+        #subject {
+            font-size: 15px;
+        }
+
+        input[type=submit] {
+            background-color: #CE3628;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-family: "Fira Mono", monospace;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(179, 36, 23);
+            transition: 0.3s ease-in-out;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #363537;
+            padding: 20px;
+        }
+
+
+        /* Outer */
+        .popup {
+            width: 100%;
+            height: 100%;
+            display: none;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        /* Inner */
+        .popup-inner {
+            max-width: 700px;
+            width: 90%;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+            border-radius: 3px;
+            background: #fff;
+        }
+
+        /* Close Button */
+        .popup-close {
+            width: 30px;
+            height: 30px;
+            padding-top: 4px;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            transition: ease 0.25s all;
+            -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+            border-radius: 1000px;
+            background: rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+            text-align: center;
+            line-height: 100%;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .popup-close:hover {
+            -webkit-transform: translate(50%, -50%) rotate(180deg);
+            transform: translate(50%, -50%) rotate(180deg);
+            background: rgba(0, 0, 0, 1);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="animate-in">
+    <div class="overlaySN"></div>
+
+    <!--Navigation menu-->
+    <div class="sidenav">
+        <div id="logoContainer"><a href="index.html" style="padding: 0px;cursor: crosshair;"><img id="logo"
+                    src="Images/logo.png" alt="Hot Beans Logo"></a></div>
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About us</a>
+        <a href="employees.html">Employees</a>
+        <a href="#" style="background-color: white; color: #363537">Careers</a>
+        <a href="courses.html">Courses</a>
+    </div>
+
+
+    <!--Navigation button-->
+    <div id="ham">
+        <div class="hamBar1"></div>
+        <div class="hamBar2"></div>
+        <div class="hamBar3"></div>
+    </div>
+
+    <!-- Center title, center text -->
+    <div class="textBlock" style="padding-bottom: 3.5%; height: 285px">
+        <center>
+            <h1 style="margin-bottom: 20px">Our Careers</h1>
+        </center>
+
+        <div class="center" style="text-align: justify; text-align-last: center;">
+            <p>
+                We are currently looking for new employees! We have great opportunities to get We're always on the
+                lookout for new talent, so if you think you have what it takes, get in touch, we're always looking for
+                new employees. We have three open positions: developer, designer and project manager. We would love to
+                see your talent!
+            </p>
+        </div>
+    </div>
+
+    <!-- Center title, center text -->
+    <div class="textBlock" style="padding-bottom: 3.5%; height: 275px; background-color: #363537; color: #FFF; mix-blend-mode:
+    screen;">
+        <center>
+            <h1 style="margin-bottom: 20px">Positions</h1>
+        </center>
+
+        <div class="center" style="text-align: justify; text-align-last: center;">
+            <p>Developer: Create websites using HTML, CSS and JS.</p>
+            <br>
+            <p>Designer: Design logos, web assets and web page wireframes.</p>
+            <br>
+            <p>Project manager: Manage the project to make sure it is on time for the client and that it is good
+                quality.</p>
+        </div>
+    </div>
+
+    <!-- Center title, center text -->
+    <div class="textBlock" style="padding-bottom: 3.5%; height: 335px">
+        <center>
+            <h1 style="margin-bottom: 20px">Specification</h1>
+        </center>
+
+        <div class="center" style="text-align: justify; text-align-last: center;">
+            <p>Developer: At least one year experience of coding in HTML, CSS, and JS, preferably with a degree which
+                compliments this.</p>
+            <br>
+            <p>Designer: Good experience with illustrator and photoshop in preference of a suitable degree too.</p>
+            <br>
+            <p>Project manager: Previous experience with managing projects and preferably experience in both other
+                positions.</p>
+        </div>
+    </div>
+
+    <div class="textBlock" style="padding-bottom: 3.5%; height: 575px; background-color: #CE3628; color: #FFF; mix-blend-mode:
+    screen;">
+        <div class="center" style="width: 65%;">
+            <div class="container">
+                <form action="#subject">
+                    <div>
+                        <div style="display: inline-block; width: 49%; margin-right: 1%">
+                            <label for="position">Position</label>
+                            <select id="position" name="position">
+                                <option value=">Project-Manager">Project Manager</option>
+                                <option value="Developer">Developer</option>
+                                <option value="Designer">Designer</option>
+                            </select>
+                        </div>
+
+                        <div style="display: inline-block; width: 49%">
+                            <label for="fname">Email</label>
+                            <input type="text" id="email" name="firstname" placeholder="Email..">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="display: inline-block; width: 49%; margin-right: 1%">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        </div>
+
+                        <div style="display: inline-block; width: 49%">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div style="display: inline-block; width: 49%; margin-right: 1%">
+                            <label for="lname">Postcode</label>
+                            <input type="text" id="pcode" name="lastname" placeholder="Postcode..">
+                        </div>
+
+                        <div style="display: inline-block; width: 49%">
+                            <label for="lname">Address</label>
+                            <input type="text" id="adrs" name="lastname" placeholder="Address..">
+                        </div>
+                    </div>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <div class="center">
+                        <input style="width: 100%" type="submit" value="Submit" data-popup-open="popup-1">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="textBlock"
+        style="padding-bottom: 3%; height: 50px; background-color: #363537; color: #FFF;  mix-blend-mode: screen;">
+        <div class="center">
+            <ul class="footer">
+                <div class="center" style="width: 55%">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="employees.html">Employees</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-1">
+        <div style="width: 100%; height: 100%;" data-popup-close="popup-1"></div>
+        <div class="popup-inner">
+            <center>
+                <h2 id="pop_title"></h2>
+                <p id="pop_text" style="margin: 15px 0px;"></p>
+                <p><a data-popup-close="popup-1" style="cursor: pointer;">Close</a></p>
+                <a class="popup-close" data-popup-close="popup-1" style="cursor: pointer;">x</a>
+            </center>
+        </div>
+    </div>
+
+
+
+    <div id="hamHidden">
+        <div class="hamBar1"></div>
+        <div class="hamBar2"></div>
+        <div class="hamBar3"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/script.js"></script>
+    <script src="JS/form.js"></script>
+</body>
+
+</html>

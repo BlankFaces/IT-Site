@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description"
+		content="Hot Beans is a web design agency based in Brighton, full of curative and technichal innovators who will create your perfect site">
+	<meta name="keywords" content="Web Development,Hot Beans,Careers,HTML,CSS,JavaScript,JS">
+
+	<link href="CSS/style.css" rel="stylesheet" type="text/css">
+	<style>
+		.parallax {
+			/* The image used */
+			background-image: url("Images/1.png");
+			/* Set a specific height */
+			height: 1000px;
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.caption {
+			left: 0;
+			top: 45%;
+			width: 100%;
+			text-align: center;
+		}
+
+		.caption span.border {
+			color: #363537;
+			padding: 18px;
+			font-family: "telegraficoregular";
+			font-weight: 900;
+			font-style: normal;
+			font-size: 120px;
+			margin-bottom: 100px
+		}
+
+		#secondLayer {
+			font-size: 30px;
+			font-family: "Fira Mono", monospace;
+			color: #363537;
+		}
+	</style>
+</head>
+
+<body class="animate-in">
+	<div class="overlaySN"></div>
+
+	<!--Navigation menu-->
+	<div class="sidenav">
+		<div id="logoContainer"><a href="#" style="padding: 0px;cursor: crosshair;"><img id="logo" src="Images/logo.png"
+					alt="Hot Beans Logo"></a></div>
+		<a href="#" style="background-color: white; color: #363537">Home</a>
+		<a href="about-us.html">About us</a>
+		<a href="employees.html">Employees</a>
+		<a href="careers.html">Careers</a>
+		<a href="courses.html">Cources</a>
+	</div>
+
+
+	<!--Navigation button-->
+	<div id="ham">
+		<div class="hamBar1"></div>
+		<div class="hamBar2"></div>
+		<div class="hamBar3"></div>
+	</div>
+
+	<!--Big image start-->
+	<div class="parallax">
+		<div style="padding-top:9%">
+			<div class="caption">
+				<img id="logo" src="Images/logo.png" alt="Hot Beans Logo" style="width: 360px;">
+			</div>
+			<div class="caption" style="top: 60%; padding-top: 60px; padding-bottom: 40px;">
+				<span class="border">We Are Hot Beans Web</span>
+			</div>
+			<div class="caption" style="top: 75%;">
+				<span class="border" id="secondLayer">A web design agency based in Brighton</span>
+			</div>
+		</div>
+	</div>
+
+	<!--Text Left Image Right-->
+	<div class="textBlock" style="padding-bottom: 3.5%; height:400px">
+		<div class="leftCol">
+			<div style="margin-left: 15%; text-align: justify;">
+				<h1>Hello,</h1>
+				<p>
+					Our agency creates a service for your company to create great sites. We help companies move to
+					online and
+					create a way for them to get more customers, meaning more income and being more noticeable.
+				</p>
+				<br>
+				<br>
+				<p>We are also always looking for new employees to create the sites for our clients with us, click <a
+						href="careers.html">here</a> to go to our careers page.</p>
+			</div>
+		</div>
+
+		<div class="rightCol" style="width: 45%">
+			<div class="imgCenter">
+				<img style="flex: none;" src="Images/comp-1.jpg" width="600" height="403" alt="Computer" />
+			</div>
+		</div>
+	</div>
+
+	<!--Two images, text bottom, what we do-->
+	<div class="textBlock" style="height: 815px; padding-bottom: 50px; padding-top: 50px; background-color: #363537; color: #FFF; mix-blend-mode:
+		screen;">
+		<center>
+			<h1 style="margin-bottom: 20px">What We Do.</h1>
+		</center>
+		<div class="center" style="width: 85%">
+			<div class="cover">
+				<img style="margin-bottom:0px" src="Images/code-1.jpg" alt="Code">
+				<img style="margin-bottom:0px" src="Images/office-1.jpg" alt="Two computers with employees">
+			</div>
+			<p style="margin-left: 1.5%; font-size: 20px; margin-top: 6px; float: left">Programming</p>
+			<p style="margin-right: 4.9%; font-size: 20px; margin-top: 6px; float: right">Communication</p>
+		</div>
+
+		<div class="center" style="width: 79.9%; font-size: 25px; margin-left: 8.85%;">
+			<p style="margin-top: 40%; text-align: justify;">
+				We specialize in creating flat design websites which stand out from it's competitors, we are ethical and
+				security
+				minded. We will communicate with you each step of the way to create a site perfect for your company. We
+				love to
+				hear
+				your ideas and build upon this to optimize it and make it more successful to maximize profit.
+			</p>
+		</div>
+	</div>
+
+	<!---Four Images, Clients-->
+	<div class="textBlock" style="height: 970px; padding-bottom: 3.5%; padding-top: 50px;">
+		<center>
+			<h1 style="margin-bottom: 20px">Our Clients.</h1>
+		</center>
+
+		<div class="center" style="width: 86%">
+			<div class="cover">
+				<img class="hovLarge" data-modal-target="#ddg" style="cursor: pointer;" src="Images/ddg.png"
+					alt="DuckDuckGo Logo">
+				<img class="hovLarge" data-modal-target="#gl" style="cursor: pointer;" src="Images/gl.png"
+					alt="GitLab Logo">
+				<img class="hovLarge" data-modal-target="#irc" style="cursor: pointer;" src="Images/irc.png"
+					alt="IRCCloud Logo">
+				<img class="hovLarge" data-modal-target="#pm" style="cursor: pointer;" src="Images/pm.png"
+					alt="ProtonMail Logo">
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<div class="textBlock"
+		style="padding-bottom: 3%; height: 50px; background-color: #363537; color: #FFF;  mix-blend-mode: screen;">
+		<div class="center">
+			<ul class="footer">
+				<div class="center" style="width: 55%">
+					<li><a href="#">Home</a></li>
+					<li><a href="about-us.html">About us</a></li>
+					<li><a href="employees.html">Employees</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li><a href="courses.html">Courses</a></li>
+				</div>
+			</ul>
+		</div>
+	</div>
+
+	<div id="hamHidden">
+		<div class="hamBar1"></div>
+		<div class="hamBar2"></div>
+		<div class="hamBar3"></div>
+	</div>
+
+	<!--DuckDuckGo Popup-->
+	<div class="modal" id="ddg">
+		<div class="modal-header">
+			<div class="title">DuckDuckGo : <a target="_blank" href="https://duckduckgo.com">https://duckduckgo.com</a>
+			</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<img style="width: 100%; padding-top: 1%; padding-bottom: 1%;" alt="" src="Images/ddg-ss.png">
+			<p>We focused on minimilism and clean flat design which makes it look good on a digital device. It is a
+				search
+				engine which doesn't track you, and is gaining popularity from the main feature of it being more private
+				than
+				other engines. We like the use of commands which allows us to search on many sites from this one search
+				engine.
+			</p>
+		</div>
+	</div>
+
+	<!--GitLab Popup-->
+	<div class="modal" id="gl">
+		<div class="modal-header">
+			<div class="title">GitLab : <a target="_blank" href="https://gitlab.com">https://gitlab.com</a></div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<img style="width: 100%; padding-top: 1%; padding-bottom: 1%;" alt="" src="Images/gl-ss.png">
+			<p>This site uses a flat design as well as adding many functions such as a filesystem to display the files
+				in
+				repositories, it uses git which is a version control manasger so a user can upload source code and it is
+				backed
+				up on their servers so the user can roll back if there is an error.
+			</p>
+		</div>
+	</div>
+
+	<!--IRCCloud Popup-->
+	<div class="modal" id="irc">
+		<div class="modal-header">
+			<div class="title">IRCCloud : <a target="_blank" href="https://irccloud.com">https://irccloud.com</a></div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<img style="width: 100%; padding-top: 1%; padding-bottom: 1%;" alt="" src="Images/irc-ss.png">
+			<p>IRCCloud is a platform to communicate to irc servers to talk to others. We designed and created the site
+				while
+				they had their own developers to add the functions and other elements to it afgter we gave it to them.
+				Our team
+				now communicates over our IRC server using this site now too.
+			</p>
+		</div>
+	</div>
+
+	<!--Protonmail Popup-->
+	<div class="modal" id="pm">
+		<div class="modal-header">
+			<div class="title">ProtonMail : <a target="_blank" href="https://protonmail.com">https://protonmail.com</a>
+			</div>
+			<button data-close-button class="close-button">&times;</button>
+		</div>
+		<div class="modal-body">
+			<img style="width: 100%; padding-top: 1%; padding-bottom: 1%;" alt="" src="Images/pm-ss.PNG">
+			<p>
+				This is a private encrypted email service, just like IRCCloud we created the looks of the website and
+				the
+				structure while they coded the backend of the sites giving it function and use making it more secure. We
+				loved
+				working with them and they loved working with us.
+			</p>
+		</div>
+	</div>
+
+	<div id="overlay"></div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="JS/script.js"></script>
+	<script src="JS/modal.js"></script>
+</body>
+
+</html>
